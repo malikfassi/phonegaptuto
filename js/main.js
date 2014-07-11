@@ -34,7 +34,7 @@ var app = {
         	$(event.target).removeClass('tappable-active');
         });
     	}
-	}
+	},
 	route: function() {
     var hash = window.location.hash;
     if (!hash) {
