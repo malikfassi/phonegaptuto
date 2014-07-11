@@ -5,7 +5,7 @@ var app = {
 		this.store = new LocalStorageStore(function() {
 			self.route();
 		});
-		registerEvents();
+		self.registerEvents();
 	},
 	showAlert: function (message, title) {
 		if (navigator.notification) {
