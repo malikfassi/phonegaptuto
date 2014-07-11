@@ -34,6 +34,7 @@ var app = {
         	$(event.target).removeClass('tappable-active');
         });
     	}
+    	$(window).on('hashchange', $.proxy(this.route, this));
 	},
 	route: function() {
     var hash = window.location.hash;
